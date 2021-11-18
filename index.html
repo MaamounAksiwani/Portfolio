@@ -10,6 +10,10 @@
     <!-- FontAwsome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- bootstrap -->
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <!-- logo website-->
     <link rel='shortcut icon' type='image/png' href='image/logo.png'>
@@ -27,21 +31,41 @@
     <div class="header" id="header">
         <div class="container Main-header">
             <a href='#' class="logo">M.alkiswani</a>
+            <h4>Follow Me <a href='https://www.linkedin.com/in/maamoum-alkiswani/' target="_blank"><i class="fa fa-linkedin-square"></i></a> </h4>
+            <div>
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-            <ul class='main-nav'>
-                <li><a href="#aboutme">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#Workss">Projects</a></li>
-                <li class='linkss'><a href="#contact">Contacts Me</a></li>
-            </ul>
+                    <div class="overlay-content">
+                        <a href="#aboutme">About</a>
+                        <a href="#services">Services</a>
+                        <a href="#myworks">My-Works</a>
+                        <a href="#">Contact</a>
+                    </div>
 
-
+                </div>
+                <span onclick="openNav()"><i class="fa fa-th-list icon-buger"></i></span>
+            </div>
         </div>
     </div>
     <!--- End Header-->
 
+
+    <!-- Start Landing Page-->
+    <div class="Langing-Page">
+        <div class="container ">
+            <div class="text ">
+                <h1>Hi I'm Maamoun Alkiswani</h1>
+                <h1>Creative Designer & Developer</h1>
+                <h3><span class="typeme "></span> </h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Landing Page-->
+
     <!-- Start Landing-->
-    <div class="landing">
+    <!-- <div class="landing">
         <div class="container ">
             <div class="text ">
                 <h1>Hi There , I'm</h1>
@@ -64,7 +88,7 @@
         <a href='#aboutme' class='go-down'>
             <i class="fa fa-angle-double-down fa-3x "></i>
         </a>
-    </div>
+    </div> -->
     <!-- End Landing-->
 
 
@@ -74,117 +98,203 @@
 
     <!-- About Me-->
     <div class='aboutMe' id="aboutme">
-        <p class='Main-Title '> About Me </p>
-        <div class='container '>
-            <div class='Main-about '>
-                <section class='wow animate__bounceInLeft' data-wow-duration="3s" data-wow-delay="0s" data-wow-offset="550">
-                    <img src='./image/49346072_2282952355307298_4506798497537720320_n.jpg ' />
-                </section>
-                <section class='wow animate__bounceInRight' data-wow-duration="3s" data-wow-delay="0s" data-wow-offset="550">
-                    <div class='about-info'>
-                        <h2>About Me</h2>
-                        <p>I'm Ma 'amoun Alkiswani A <span>Full Stack Developer</span> Living In Jordan.</p>
-                        <p>I Am Currently Learning.</p>
-                        <p>I Am 25 Years Old And Have<span> 1 YEAR EXPERIENCE.</span></p>
-                        <p>I Look Forward To Improving Myself Every Day.</p>
-                        <p>I Look Forward To Elegance And Softness In Designs</p>
-                    </div>
-                </section>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-lg-5'>
+                    <img src='./image/myimg.jpg' />
+                </div>
+
+                <div class='col-lg-7'>
+                    <h2>About Me.</h2>
+                    <h5>Front End Developer</h5>
+                    <p>I'm Maamoun Alkiswani . I'm 25 years old , I got many courses about programming</p>
+                    <p>I am creative designer & developer . I create beautiful professional websites using best techniques . I enjoy turning complex problems into simple, beautiful and intuitive interface designs.</p>
+                </div>
             </div>
         </div>
     </div>
     <!-- About Me -->
 
-    <!-- Start Skills-->
-    <div class="Main-Skills " id='skills'>
-        <p class='Main-Title '> my skills</p>
+    <!-- Start Services-->
 
-        <div class="container ">
-            <p class='title-skills '>These Are My Skills, Let Me Show You.</p>
 
-            <div class='my-skills '>
-                <div class='skill '>
-                    <img src='image/html5.svg ' />
-                    <h3>HTML</h3>
+    <!-- End Services -->
+    <div class="services" id='services'>
+        <div class="container">
+            <h4>SERVICES</h4>
+            <h1>WHAT I CAN DO</h1>
+
+            <div class="row">
+
+                <div class="col-lg-4">
+                    <div class="services-box">
+                        <img src='./image/web-programming.png' />
+                        <h3>01 Web Design</h3>
+                        <p>Create professional , modern and unusual website and in the same time simple , using the best techniques</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="services-box">
+                        <img src='./image/responsive.png' />
+                        <h3>02 Responsive Web Design</h3>
+                        <p>Allows websites and pages to display on all devices and screen sizes by automatically adapting to the screen, whether it’s a desktop, laptop, tablet, or smartphone.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="services-box">
+                        <img src='./image/layout.png' />
+                        <h3>03 Custom Web Design</h3>
+                        <p>Every element of the website is custom designed to fit your needs. Your strategy and content come first and the design is built around it.</p>
+                    </div>
                 </div>
 
-                <div class='skill '>
-                    <img src='image/css.svg ' />
-                    <h3>CSS</h3>
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-lg-4">
+                    <div class="services-box">
+                        <img src='./image/dashboard.png' />
+                        <h3>04 Dynamic Web Design</h3>
+                        <p>Refers to web content that changes based on the behavior, preferences, and interests of the user its goal being to deliver an engaging and satisfying online experience for the visitor.</p>
+                    </div>
                 </div>
 
-                <div class='skill '>
-                    <img src='image/bootstrap.svg ' />
-                    <h3>Bootstrap</h3>
+                <div class="col-lg-4">
+                    <div class="services-box">
+                        <img src='./image/psd-file.png' />
+                        <h3>05 PSD to HTML</h3>
+                        <p>PSD to HTML is a process wherein Photoshop documents are converted to HTML and CSS code</p>
+                    </div>
                 </div>
 
-
-                <div class='skill '>
-                    <img src='image/js.svg ' />
-                    <h3>Javascript</h3>
-                </div>
-
-                <div class='skill '>
-                    <img src='image/sass-removebg-preview.png ' />
-                    <h3>Sass</h3>
-                </div>
-
-                <div class='skill '>
-                    <img src='image/json.svg ' />
-                    <h3>Json</h3>
-                </div>
-
-
-                <div class='skill '>
-                    <img src='image/mongodb-logo.png ' />
-                    <h3>mangoDb</h3>
-                </div>
-
-
-                <div class='skill '>
-                    <img src='image/node-removebg-preview.png ' />
-                    <h3>NodeJs</h3>
-                </div>
-
-
-                <div class='skill '>
-                    <img src='image/api.png ' />
-                    <h3>Restful APIs</h3>
-                </div>
-
-                <div class='skill '>
-                    <img src='image/react.png ' />
-                    <h3>React</h3>
-                </div>
-
-                <div class='skill '>
-                    <img src='image/mysql.png ' />
-                    <h3>Mysql</h3>
-                </div>
-
-
-
-                <div class='skill '>
-                    <img src='image/Tailwind_CSS_Logo.svg-removebg-preview.png ' />
-                    <h3> Tailwind </h3>
+                <div class="col-lg-4">
+                    <div class="services-box">
+                        <img src='./image/redesign.png' />
+                        <h3>06 Web Redesign Service</h3>
+                        <p>Website redesign services help to transform a website’s existing look and feel with the partial or complete revamping of user interface and user experience design.</p>
+                    </div>
                 </div>
             </div>
         </div>
-
     </div>
 
-    <!-- End Time line -->
 
+    <!-- Start TECHNOLOGIES -->
+
+    <div class="tools">
+        <div class="container">
+            <h4>TECHNOLOGIES & TOOLS</h4>
+            <h1>WHAT I USE</h1>
+
+            <div class="tool">
+                <div class="row">
+                    <div class="col">
+                        <div class="tool-box">
+                            <img src='image/html5.svg ' />
+                            <h5>HTML</h5>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="tool-box">
+                            <img src='image/css.svg  ' />
+                            <h5>Css</h5>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="tool-box">
+                            <img src='image/bootstrap.svg' />
+                            <h5>bootstrap</h5>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="tool-box">
+                            <img src='image/js.svg' />
+                            <h5>JavaScript</h5>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="tool-box">
+                            <img src='image/sass-removebg-preview.png  ' />
+                            <h5>Sass</h5>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="tool-box">
+                            <img src='image/json.svg' />
+                            <h5>Json</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="tool-box">
+                        <div class="col">
+                            <img src='image/mongodb-logo.png ' />
+                            <h5>mongodb</h5>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="tool-box">
+                            <img src='image/node-removebg-preview.png  ' />
+                            <h5>NodeJs</h5>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="tool-box">
+                            <img src='image/api.png' />
+                            <h5>Restful</h5>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="tool-box">
+                            <img src='image/react.png   ' />
+                            <h5>React</h5>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="tool-box">
+                            <img src='image/mysql.png ' />
+                            <h5>Mysql</h5>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="tool-box">
+                            <img src='image/Tailwind_CSS_Logo.svg-removebg-preview.png  ' />
+                            <h5>Tailwind</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End TECHNOLOGIES-->
+
+
+    <div>Feedback</div>
+
+
+
+    <!-- Start my-work-->
+
+    <div class="myworks" id='myworks'>
+        <div class="container">
+            <h4>PORTFOLIO</h4>
+            <h1>WORK I HAVE DONE</h1>
+        </div>
+    </div>
+    <!-- end my-work-->
 
     <!-- my project -->
 
     <div class="articles " id="Workss">
-
-        <p class='Main-Title '> My Works </p>
-
         <div class="container ">
-
-            <p class='title-skills '>These are my works, let me show you.</p>
             <div class="main-article ">
                 <div class="box ">
                     <img src="image/image (12).png " alt=" " />
@@ -195,7 +305,7 @@
                     </div>
                     <div class="info ">
                         <a href="https://maamounaksiwani.github.io/Website-Restaurant/ " target="_blank ">Show Demo</a>
-                        <i class=" fa fa-long-arrow-right "></i>
+                        <i class=" fa fa-github "></i>
                     </div>
                 </div>
                 <div class="box ">
@@ -208,7 +318,7 @@
 
                     <div class="info ">
                         <a href="https://maamounaksiwani.github.io/E-commerce/ " target="_blank ">Show Demo</a>
-                        <i class=" fa fa-long-arrow-right "></i>
+                        <i class=" fa fa-github "></i>
                     </div>
                 </div>
                 <div class="box ">
@@ -220,7 +330,7 @@
                     </div>
                     <div class="info ">
                         <a href="https://maamounaksiwani.github.io/WebSiteTest/ " target="_blank ">Show Demo</a>
-                        <i class=" fa fa-long-arrow-right "></i>
+                        <i class=" fa fa-github "></i>
                     </div>
                 </div>
                 <div class="box ">
@@ -232,7 +342,7 @@
                     </div>
                     <div class="info ">
                         <a href="https://keen-saha-2adaed.netlify.app/ " target="_blank ">Show Demo</a>
-                        <i class=" fa fa-long-arrow-right "></i>
+                        <i class=" fa fa-github "></i>
                     </div>
                 </div>
 
@@ -245,7 +355,7 @@
                     </div>
                     <div class="info ">
                         <a href="https://maamounaksiwani.github.io/aldin-qayem/ " target="_blank ">Show Demo</a>
-                        <i class=" fa fa-long-arrow-right "></i>
+                        <i class=" fa fa-github "></i>
                     </div>
                 </div>
 
@@ -259,21 +369,21 @@
                     </div>
                     <div class="info ">
                         <a href="https://maamounaksiwani.github.io/AXIT/ " target="_blank ">Show Demo</a>
-                        <i class=" fa fa-long-arrow-right "></i>
+                        <i class=" fa fa-github "></i>
                     </div>
                 </div>
 
 
                 <div class="box ">
-                    <img src="image/image (19).png " alt=" " />
+                    <img src="image/image (20).png " alt=" " />
                     <div class="content ">
-                        <h3>Doctor</h3>
+                        <h3>Simple Site</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
                         <hr>
                     </div>
                     <div class="info ">
-                        <a href="https://maamounaksiwani.github.io/doctor/ " target="_blank ">Show Demo</a>
-                        <i class=" fa fa-long-arrow-right "></i>
+                        <a href="https://maamounaksiwani.github.io/Maamoun/ " target="_blank ">Show Demo</a>
+                        <i class=" fa fa-github "></i>
                     </div>
                 </div>
             </div>
@@ -282,7 +392,7 @@
     <!-- End projects -->
 
     <!-- Start FEATURES-->
-    <div class="features ">
+    <!-- <div class="features ">
         <div class="container ">
             <p class='Main-Title '> My Services
             </p>
@@ -324,53 +434,34 @@
 
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- End FEATURES-->
 
-
-    <!-- Contact Me -->
-
-    <div class="contact " id='contact'>
-
-        <div class='container'>
-            <p class='Main-Title'> Contact Me
-            </p>
-            <p class='title-skills'>contact with me..</p>
-
-            <div class='content-box'>
-                <div class='box'>
-                    <div class='myinfo'>
-                        <i class='	fa fa-envelope'></i>
-                        <p>Email</p>
-                    </div>
-                    <span>Maamoun.malkiswani@gmail.com</span>
-                </div>
-
-                <div class='box'>
-                    <div class='myinfo'>
-                        <i class='fa fa-user-o'></i>
-                        <p>Phone-number</p>
-                    </div>
-                    <span>+962454545</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Contact Me -->
 
     <!-- Footer-->
 
     <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <h3>m.alkiswani</h3>
 
-        <div class='container'>
-            <p>Made With By Maamoun</p>
-            <div class='icon'>
-                <i class='fa fa-facebook-square'></i>
-                <i class='fa fa-twitter-square'></i>
-                <i class='	fa fa-git'></i>
+                </div>
+                <div class="col-lg-3">
+                    <h3>phone</h3>
+                    <p>+962790465596</p>
+                </div>
+                <div class="col-lg-3">
+                    <h3>follow me</h3>
+                    <i class="fa fa-github icon"></i>
+                </div>
+                <div class="col-lg-3">
+                    <h3>Email</h3>
+                    <p>Maamoun.malkiswani@gmail.com</p>
+                </div>
             </div>
+            <hr>
+            <p>Copyright © 2021 Alkiswani All Rights Reserved</p>
         </div>
     </footer>
     <!-- Footer-->
@@ -382,10 +473,16 @@
     <!-- <script src='./js/jq.js'></script> -->
     <script src='./js/typed.min.js'></script>
     <script src='./js/wow.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
         new WOW().init();
         var typed = new Typed('.typeme', {
-            strings: ["Web Developer ", "Creative Designer ", "Freelancer "],
+            strings: ["Let's work together", "I can create awesome website."],
             typeSpeed: 50,
             backSpeed: 50,
             loop: true,
@@ -416,6 +513,15 @@
         function topFunction() {
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
+        }
+
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
         }
     </script>
 
