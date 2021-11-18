@@ -25,33 +25,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400&display=swap" rel="stylesheet">
 </head>
 
-<div>
+<!-- Start Header-->
+<header>
+    <nav>
+        <div class="header" id="header">
+            <div class="container Main-header">
+                <a href='#' class="logo">M.alkiswani</a>
+                <h4>Follow Me <a href='https://www.linkedin.com/in/maamoum-alkiswani/' target="_blank"><i class="fa fa-linkedin-square"></i></a> </h4>
+                <div>
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-    <!--- Start Header-->
-    <div class="header" id="header">
-        <div class="container Main-header">
-            <a href='#' class="logo">M.alkiswani</a>
-            <h4>Follow Me <a href='https://www.linkedin.com/in/maamoum-alkiswani/' target="_blank"><i class="fa fa-linkedin-square"></i></a> </h4>
-            <div>
-                <div id="myNav" class="overlay">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                            <a href="#aboutme">About</a>
+                            <a href="#services">Services</a>
+                            <a href="#myworks">My-Works</a>
+                            <a href="#footer">Contact</a>
+                        </div>
 
-                    <div class="overlay-content">
-                        <a href="#aboutme">About</a>
-                        <a href="#services">Services</a>
-                        <a href="#myworks">My-Works</a>
-                        <a href="#">Contact</a>
                     </div>
-
+                    <span onclick="openNav()"><i class="fa fa-th-list icon-buger"></i></span>
                 </div>
-                <span onclick="openNav()"><i class="fa fa-th-list icon-buger"></i></span>
             </div>
         </div>
-    </div>
-    <!--- End Header-->
-
-
-    <!-- Start Landing Page-->
+    </nav>
     <div class="Langing-Page">
         <div class="container ">
             <div class="text ">
@@ -62,49 +59,19 @@
         </div>
     </div>
 
-    <!-- End Landing Page-->
+</header>
 
-    <!-- Start Landing-->
-    <!-- <div class="landing">
-        <div class="container ">
-            <div class="text ">
-                <h1>Hi There , I'm</h1>
-                <h2>Maamoun Alkiswani</h2>
-                <h3>I am a <span class="typeme "></span> . </h3>
-
-                <div class='skill-console'>
-                    <p>if (developer != me )</p>
-                    <p>{</p>
-                    <p class='text-console'>console.warn( <span class="console"></span>);</p>
-                    <p>}</p>
-                </div>
+<!-- End Header-->
+<!-- About Me-->
+<div class='aboutMe' id="aboutme">
+    <div class='container'>
+        <div class='row'>
+            <div class='col-lg-5'>
+                <img src='./image/myimg.jpg' />
             </div>
 
-            <div class="img ">
-                <img src="image/ssss.png " alt='not found'>
-            </div>
-        </div>
-
-        <a href='#aboutme' class='go-down'>
-            <i class="fa fa-angle-double-down fa-3x "></i>
-        </a>
-    </div> -->
-    <!-- End Landing-->
-
-
-    <!-- Start Main Title-->
-    <!-- <p class='Main-Title'> Articles</p> -->
-    <!-- End Main Title-->
-
-    <!-- About Me-->
-    <div class='aboutMe' id="aboutme">
-        <div class='container'>
-            <div class='row'>
-                <div class='col-lg-5'>
-                    <img src='./image/myimg.jpg' />
-                </div>
-
-                <div class='col-lg-7'>
+            <div class='col-lg-7'>
+                <div class='about-info'>
                     <h2>About Me.</h2>
                     <h5>Front End Developer</h5>
                     <p>I'm Maamoun Alkiswani . I'm 25 years old , I got many courses about programming</p>
@@ -113,418 +80,381 @@
             </div>
         </div>
     </div>
-    <!-- About Me -->
+</div>
+<!-- About Me -->
 
-    <!-- Start Services-->
+<!-- Start Services-->
+<div class="services" id='services'>
+    <div class="container">
+        <h4>SERVICES</h4>
+        <h1>WHAT I CAN DO</h1>
 
+        <div class="row">
 
-    <!-- End Services -->
-    <div class="services" id='services'>
-        <div class="container">
-            <h4>SERVICES</h4>
-            <h1>WHAT I CAN DO</h1>
-
-            <div class="row">
-
-                <div class="col-lg-4">
-                    <div class="services-box">
-                        <img src='./image/web-programming.png' />
-                        <h3>01 Web Design</h3>
-                        <p>Create professional , modern and unusual website and in the same time simple , using the best techniques</p>
-                    </div>
+            <div class="col-lg-4">
+                <div class="services-box">
+                    <img src='./image/web-programming.png' />
+                    <h3>01 Web Design</h3>
+                    <p>Create professional , modern and unusual website and in the same time simple , using the best techniques</p>
                 </div>
-                <div class="col-lg-4">
-                    <div class="services-box">
-                        <img src='./image/responsive.png' />
-                        <h3>02 Responsive Web Design</h3>
-                        <p>Allows websites and pages to display on all devices and screen sizes by automatically adapting to the screen, whether it’s a desktop, laptop, tablet, or smartphone.</p>
-                    </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="services-box">
+                    <img src='./image/responsive.png' />
+                    <h3>02 Responsive Web Design</h3>
+                    <p>Allows websites and pages to display on all devices and screen sizes by automatically adapting to the screen, whether it’s a desktop, laptop, tablet, or smartphone.</p>
                 </div>
-                <div class="col-lg-4">
-                    <div class="services-box">
-                        <img src='./image/layout.png' />
-                        <h3>03 Custom Web Design</h3>
-                        <p>Every element of the website is custom designed to fit your needs. Your strategy and content come first and the design is built around it.</p>
-                    </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="services-box">
+                    <img src='./image/layout.png' />
+                    <h3>03 Custom Web Design</h3>
+                    <p>Every element of the website is custom designed to fit your needs. Your strategy and content come first and the design is built around it.</p>
                 </div>
-
             </div>
 
+        </div>
 
-            <div class="row">
 
-                <div class="col-lg-4">
-                    <div class="services-box">
-                        <img src='./image/dashboard.png' />
-                        <h3>04 Dynamic Web Design</h3>
-                        <p>Refers to web content that changes based on the behavior, preferences, and interests of the user its goal being to deliver an engaging and satisfying online experience for the visitor.</p>
-                    </div>
+        <div class="row">
+
+            <div class="col-lg-4">
+                <div class="services-box">
+                    <img src='./image/dashboard.png' />
+                    <h3>04 Dynamic Web Design</h3>
+                    <p>Refers to web content that changes based on the behavior, preferences, and interests of the user its goal being to deliver an engaging and satisfying online experience for the visitor.</p>
                 </div>
+            </div>
 
-                <div class="col-lg-4">
-                    <div class="services-box">
-                        <img src='./image/psd-file.png' />
-                        <h3>05 PSD to HTML</h3>
-                        <p>PSD to HTML is a process wherein Photoshop documents are converted to HTML and CSS code</p>
-                    </div>
+            <div class="col-lg-4">
+                <div class="services-box">
+                    <img src='./image/psd-file.png' />
+                    <h3>05 PSD to HTML</h3>
+                    <p>PSD to HTML is a process wherein Photoshop documents are converted to HTML and CSS code</p>
                 </div>
+            </div>
 
-                <div class="col-lg-4">
-                    <div class="services-box">
-                        <img src='./image/redesign.png' />
-                        <h3>06 Web Redesign Service</h3>
-                        <p>Website redesign services help to transform a website’s existing look and feel with the partial or complete revamping of user interface and user experience design.</p>
-                    </div>
+            <div class="col-lg-4">
+                <div class="services-box">
+                    <img src='./image/redesign.png' />
+                    <h3>06 Web Redesign Service</h3>
+                    <p>Website redesign services help to transform a website’s existing look and feel with the partial or complete revamping of user interface and user experience design.</p>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
+<!-- End Services -->
 
 
-    <!-- Start TECHNOLOGIES -->
+<!-- Start TECHNOLOGIES -->
+<div class="tools">
+    <div class="container">
+        <h4>TECHNOLOGIES & TOOLS</h4>
+        <h1>WHAT I USE</h1>
 
-    <div class="tools">
-        <div class="container">
-            <h4>TECHNOLOGIES & TOOLS</h4>
-            <h1>WHAT I USE</h1>
-
-            <div class="tool">
-                <div class="row">
-                    <div class="col">
-                        <div class="tool-box">
-                            <img src='image/html5.svg ' />
-                            <h5>HTML</h5>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="tool-box">
-                            <img src='image/css.svg  ' />
-                            <h5>Css</h5>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="tool-box">
-                            <img src='image/bootstrap.svg' />
-                            <h5>bootstrap</h5>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="tool-box">
-                            <img src='image/js.svg' />
-                            <h5>JavaScript</h5>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="tool-box">
-                            <img src='image/sass-removebg-preview.png  ' />
-                            <h5>Sass</h5>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="tool-box">
-                            <img src='image/json.svg' />
-                            <h5>Json</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
+        <div class="tool">
+            <div class="row">
+                <div class="col">
                     <div class="tool-box">
-                        <div class="col">
-                            <img src='image/mongodb-logo.png ' />
-                            <h5>mongodb</h5>
-                        </div>
+                        <img src='image/html5.svg ' />
+                        <h5>HTML</h5>
                     </div>
-                    <div class="col">
-                        <div class="tool-box">
-                            <img src='image/node-removebg-preview.png  ' />
-                            <h5>NodeJs</h5>
-                        </div>
+                </div>
+                <div class="col">
+                    <div class="tool-box">
+                        <img src='image/css.svg  ' />
+                        <h5>Css</h5>
                     </div>
-                    <div class="col">
-                        <div class="tool-box">
-                            <img src='image/api.png' />
-                            <h5>Restful</h5>
-                        </div>
+                </div>
+                <div class="col">
+                    <div class="tool-box">
+                        <img src='image/bootstrap.svg' />
+                        <h5>bootstrap</h5>
                     </div>
+                </div>
 
-                    <div class="col">
-                        <div class="tool-box">
-                            <img src='image/react.png   ' />
-                            <h5>React</h5>
-                        </div>
+                <div class="col">
+                    <div class="tool-box">
+                        <img src='image/js.svg' />
+                        <h5>JavaScript</h5>
                     </div>
-                    <div class="col">
-                        <div class="tool-box">
-                            <img src='image/mysql.png ' />
-                            <h5>Mysql</h5>
-                        </div>
-                    </div>
+                </div>
 
-                    <div class="col">
-                        <div class="tool-box">
-                            <img src='image/Tailwind_CSS_Logo.svg-removebg-preview.png  ' />
-                            <h5>Tailwind</h5>
-                        </div>
+                <div class="col">
+                    <div class="tool-box">
+                        <img src='image/sass-removebg-preview.png  ' />
+                        <h5>Sass</h5>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="tool-box">
+                        <img src='image/json.svg' />
+                        <h5>Json</h5>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <!-- End TECHNOLOGIES-->
-
-
-    <div>Feedback</div>
-
-
-
-    <!-- Start my-work-->
-
-    <div class="myworks" id='myworks'>
-        <div class="container">
-            <h4>PORTFOLIO</h4>
-            <h1>WORK I HAVE DONE</h1>
-        </div>
-    </div>
-    <!-- end my-work-->
-
-    <!-- my project -->
-
-    <div class="articles " id="Workss">
-        <div class="container ">
-            <div class="main-article ">
-                <div class="box ">
-                    <img src="image/image (12).png " alt=" " />
-                    <div class="content ">
-                        <h3>Tasty Food</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
-                        <hr>
-                    </div>
-                    <div class="info ">
-                        <a href="https://maamounaksiwani.github.io/Website-Restaurant/ " target="_blank ">Show Demo</a>
-                        <i class=" fa fa-github "></i>
-                    </div>
-                </div>
-                <div class="box ">
-                    <img src="image/image (13).png " alt=" " />
-                    <div class="content ">
-                        <h3>E-commerce </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
-                        <hr>
-                    </div>
-
-                    <div class="info ">
-                        <a href="https://maamounaksiwani.github.io/E-commerce/ " target="_blank ">Show Demo</a>
-                        <i class=" fa fa-github "></i>
-                    </div>
-                </div>
-                <div class="box ">
-                    <img src="image/image (14).png " alt=" " />
-                    <div class="content ">
-                        <h3>Mobile App</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
-                        <hr>
-                    </div>
-                    <div class="info ">
-                        <a href="https://maamounaksiwani.github.io/WebSiteTest/ " target="_blank ">Show Demo</a>
-                        <i class=" fa fa-github "></i>
-                    </div>
-                </div>
-                <div class="box ">
-                    <img src="image/image (15).png " alt=" " />
-                    <div class="content ">
-                        <h3>Ed3amny</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
-                        <hr>
-                    </div>
-                    <div class="info ">
-                        <a href="https://keen-saha-2adaed.netlify.app/ " target="_blank ">Show Demo</a>
-                        <i class=" fa fa-github "></i>
-                    </div>
-                </div>
-
-                <div class="box ">
-                    <img src="image/image (16).png " alt=" " />
-                    <div class="content ">
-                        <h3>aldin qayem</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
-                        <hr>
-                    </div>
-                    <div class="info ">
-                        <a href="https://maamounaksiwani.github.io/aldin-qayem/ " target="_blank ">Show Demo</a>
-                        <i class=" fa fa-github "></i>
-                    </div>
-                </div>
-
-
-                <div class="box ">
-                    <img src="image/image (17).png " alt=" " />
-                    <div class="content ">
-                        <h3>AXIT</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
-                        <hr>
-                    </div>
-                    <div class="info ">
-                        <a href="https://maamounaksiwani.github.io/AXIT/ " target="_blank ">Show Demo</a>
-                        <i class=" fa fa-github "></i>
-                    </div>
-                </div>
-
-
-                <div class="box ">
-                    <img src="image/image (20).png " alt=" " />
-                    <div class="content ">
-                        <h3>Simple Site</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
-                        <hr>
-                    </div>
-                    <div class="info ">
-                        <a href="https://maamounaksiwani.github.io/Maamoun/ " target="_blank ">Show Demo</a>
-                        <i class=" fa fa-github "></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End projects -->
-
-    <!-- Start FEATURES-->
-    <!-- <div class="features ">
-        <div class="container ">
-            <p class='Main-Title '> My Services
-            </p>
-
-            <p class='title-skills '>These are my Services, let me show you.</p>
-            <div class='features-box'>
-                <section class='wow animate__bounceInLeft' data-wow-duration="3s" data-wow-delay="0s" data-wow-offset="230">
-                    <div class='box '>
-                        <div class='img-overlay '> <img src='image/features-01.jpg ' /></div>
-                        <div class='content '>
-                            <h2>Fast in creating</h2>
-                            <p>Yes, I can create an entire website quickly, But that doesn't mean I write faster,</p>
-                        </div>
-                    </div>
-                </section>
-                <section class='wow animate__bounceInDown' data-wow-duration="3s" data-wow-delay="0s" data-wow-offset="230">
-                    <div class='box'>
-                        <div class='img-overlay'> <img src='image/features-02.jpg' /></div>
-                        <div class='content'>
-                            <h2>Clean Code</h2>
-                            <p>And this is by writing a clean code with comments.</p>
-                        </div>
-                    </div>
-                </section>
-
-                <section class='wow animate__bounceInRight' data-wow-duration="3s" data-wow-delay="0s" data-wow-offset="230">
-                    <div class='box'>
-
-                        <div class='img-overlay'> <img src='image/features-03.jpg' /></div>
-                        <div class='content'>
-                            <h2>Web Design</h2>
-                            <p>Design a complete website for you using HTML, CSS, JavaScript, Bootstrap, Sass and make the website responsive with all screens.
-
-                            </p>
-
-                        </div>
-                    </div>
-                </section>
-
-            </div>
-        </div>
-    </div> -->
-    <!-- End FEATURES-->
-
-
-    <!-- Footer-->
-
-    <footer>
-        <div class="container">
             <div class="row">
-                <div class="col-lg-3">
-                    <h3>m.alkiswani</h3>
+                <div class="tool-box">
+                    <div class="col">
+                        <img src='image/mongodb-logo.png ' />
+                        <h5>mongodb</h5>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="tool-box">
+                        <img src='image/node-removebg-preview.png  ' />
+                        <h5>NodeJs</h5>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="tool-box">
+                        <img src='image/api.png' />
+                        <h5>Restful</h5>
+                    </div>
+                </div>
 
+                <div class="col">
+                    <div class="tool-box">
+                        <img src='image/react.png   ' />
+                        <h5>React</h5>
+                    </div>
                 </div>
-                <div class="col-lg-3">
-                    <h3>phone</h3>
-                    <p>+962790465596</p>
+                <div class="col">
+                    <div class="tool-box">
+                        <img src='image/mysql.png ' />
+                        <h5>Mysql</h5>
+                    </div>
                 </div>
-                <div class="col-lg-3">
-                    <h3>follow me</h3>
-                    <i class="fa fa-github icon"></i>
-                </div>
-                <div class="col-lg-3">
-                    <h3>Email</h3>
-                    <p>Maamoun.malkiswani@gmail.com</p>
+
+                <div class="col">
+                    <div class="tool-box">
+                        <img src='image/Tailwind_CSS_Logo.svg-removebg-preview.png  ' />
+                        <h5>Tailwind</h5>
+                    </div>
                 </div>
             </div>
-            <hr>
-            <p>Copyright © 2021 Alkiswani All Rights Reserved</p>
         </div>
-    </footer>
-    <!-- Footer-->
-
-    <div onclick="topFunction(); " class='scroll'>
-        <i class=" fa fa-long-arrow-up "></i>
     </div>
+</div>
 
-    <!-- <script src='./js/jq.js'></script> -->
-    <script src='./js/typed.min.js'></script>
-    <script src='./js/wow.min.js'></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        function myFunction(x) {
-            x.classList.toggle("change");
-        }
-        new WOW().init();
-        var typed = new Typed('.typeme', {
-            strings: ["Let's work together", "I can create awesome website."],
-            typeSpeed: 50,
-            backSpeed: 50,
-            loop: true,
-        });
+<!-- End TECHNOLOGIES-->
 
-        var typed = new Typed('.console', {
-            strings: ["You Messed With The Wrong Person!"],
-            typeSpeed: 50,
-            backSpeed: 50,
-            loop: true,
-        });
-        window.onscroll = function() {
-            scroll()
-        };
 
-        function scroll() {
-            const button_scrrll = document.querySelector('.scroll');
-            const nav = document.querySelector("nav ");
-            if (document.body.scrollTop > 25 || document.documentElement.scrollTop > 25) {
-                button_scrrll.style.display = 'block';
-                nav.classList.add("scrolldown ");
+<div>Feedback</div>
+
+
+
+<!-- Start my-work-->
+<div class="myworks" id='myworks'>
+    <div class="container">
+        <h4>PORTFOLIO</h4>
+        <h1>WORK I HAVE DONE</h1>
+    </div>
+</div>
+<!-- end my-work-->
+<!-- my project -->
+<div class="articles " id="Workss">
+    <div class="container ">
+        <div class="main-article ">
+            <div class="box ">
+                <img src="image/image (12).png " alt=" " />
+                <div class="content ">
+                    <h3>Tasty Food</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+                    <hr>
+                </div>
+                <div class="info ">
+                    <a href="https://maamounaksiwani.github.io/Website-Restaurant/ " target="_blank ">Show Demo</a>
+                    <i class=" fa fa-github "></i>
+                </div>
+            </div>
+            <div class="box ">
+                <img src="image/image (13).png " alt=" " />
+                <div class="content ">
+                    <h3>E-commerce </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+                    <hr>
+                </div>
+
+                <div class="info ">
+                    <a href="https://maamounaksiwani.github.io/E-commerce/ " target="_blank ">Show Demo</a>
+                    <i class=" fa fa-github "></i>
+                </div>
+            </div>
+            <div class="box ">
+                <img src="image/image (14).png " alt=" " />
+                <div class="content ">
+                    <h3>Mobile App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+                    <hr>
+                </div>
+                <div class="info ">
+                    <a href="https://maamounaksiwani.github.io/WebSiteTest/ " target="_blank ">Show Demo</a>
+                    <i class=" fa fa-github "></i>
+                </div>
+            </div>
+            <div class="box ">
+                <img src="image/image (15).png " alt=" " />
+                <div class="content ">
+                    <h3>Ed3amny</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+                    <hr>
+                </div>
+                <div class="info ">
+                    <a href="https://keen-saha-2adaed.netlify.app/ " target="_blank ">Show Demo</a>
+                    <i class=" fa fa-github "></i>
+                </div>
+            </div>
+
+            <div class="box ">
+                <img src="image/image (16).png " alt=" " />
+                <div class="content ">
+                    <h3>aldin qayem</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+                    <hr>
+                </div>
+                <div class="info ">
+                    <a href="https://maamounaksiwani.github.io/aldin-qayem/ " target="_blank ">Show Demo</a>
+                    <i class=" fa fa-github "></i>
+                </div>
+            </div>
+
+
+            <div class="box ">
+                <img src="image/image (17).png " alt=" " />
+                <div class="content ">
+                    <h3>AXIT</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+                    <hr>
+                </div>
+                <div class="info ">
+                    <a href="https://maamounaksiwani.github.io/AXIT/ " target="_blank ">Show Demo</a>
+                    <i class=" fa fa-github "></i>
+                </div>
+            </div>
+
+
+            <div class="box ">
+                <img src="image/image (20).png " alt=" " />
+                <div class="content ">
+                    <h3>Simple Site</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+                    <hr>
+                </div>
+                <div class="info ">
+                    <a href="https://maamounaksiwani.github.io/Maamoun/ " target="_blank ">Show Demo</a>
+                    <i class=" fa fa-github "></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End projects -->
+<!-- Footer-->
+<footer id='footer'>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <h3 class="title-footer">m.alkiswani</h3>
+
+            </div>
+            <div class="col-lg-3">
+                <h3>phone</h3>
+                <p>+962790465596</p>
+            </div>
+            <div class="col-lg-3">
+                <h3>follow me</h3>
+                <a href='https://github.com/MaamounAksiwani?tab=repositories' target='_blank'><i class="fa fa-github icon"></i></a>
+            </div>
+            <div class="col-lg-3">
+                <h3>Email</h3>
+                <p>Maamoun.malkiswani@gmail.com</p>
+            </div>
+        </div>
+        <hr>
+        <p class='copy-right'>Copyright © 2021 Alkiswani All Rights Reserved</p>
+    </div>
+</footer>
+<!-- Footer-->
+
+<div onclick="topFunction(); " class='scroll'>
+    <i class=" fa fa-long-arrow-up "></i>
+</div>
+
+<script src='./js/typed.min.js'></script>
+<script src='./js/wow.min.js'></script>
+<script src='./js/jquery.js'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 55) {
+                $('nav').css('background-color', "white");
+                $('nav').css("box-shadow", " 0 2px 15px #ccc");
+                $("nav").css("transition", "0.5s");
+                $(".logo").css('color', "#000");
+                $("header h4").css("color", "#000");
+                $(".icon-buger").css('color', '#000');
+                $('header h4 a').css("color", "#2196f3");
+
             } else {
-                button_scrrll.style.display = 'none';
-                nav.classList.remove("scrolldown ");
+                $('nav').css('background', "none");
+                $('nav').css("box-shadow", "none");
+                $("nav").css("transition", "0.5s");
+                $(".logo").css('color', "#fff");
+                $("header h4").css("color", "#fff");
+                $(".icon-buger").css('color', '#fff');
+                $('header h4 a').css("color", "#fff");
             }
-        }
+        })
+    })
 
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
+    function myFunction(x) {
+        x.classList.toggle("change");
+    }
+    new WOW().init();
+    var typed = new Typed('.typeme', {
+        strings: ["Let's work together", "I can create awesome website."],
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true,
+    });
+    window.onscroll = function() {
+        scroll()
+    };
 
-        function openNav() {
-            document.getElementById("myNav").style.width = "100%";
+    function scroll() {
+        const button_scrrll = document.querySelector('.scroll');
+        const nav = document.querySelector("nav ");
+        if (document.body.scrollTop > 25 || document.documentElement.scrollTop > 25) {
+            button_scrrll.style.display = 'block';
+            nav.classList.add("scrolldown ");
+        } else {
+            button_scrrll.style.display = 'none';
+            nav.classList.remove("scrolldown ");
         }
+    }
 
-        /* Close when someone clicks on the "x" symbol inside the overlay */
-        function closeNav() {
-            document.getElementById("myNav").style.width = "0%";
-        }
-    </script>
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
 
-    </body>
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
+
+    /* Close when someone clicks on the "x" symbol inside the overlay */
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+</script>
+
+</body>
 
 </html>

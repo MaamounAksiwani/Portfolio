@@ -16,6 +16,7 @@ html {
 body {
     font-family: "Cairo", sans-ser;
     background-color: #f7f7f7;
+    /* direction: rtl; */
 }
 
 ul {
@@ -35,15 +36,6 @@ a {
 }
 
 
-/* 
-.container {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-} */
-
-
 /* Start Navbar */
 
 .icon-buger {
@@ -55,7 +47,7 @@ a {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 22;
+    z-index: 3;
     left: 0;
     top: 0;
     background-color: rgb(0, 0, 0);
@@ -104,30 +96,34 @@ a {
 
 /*End Navbar*/
 
-
-/* Small */
-
-@media (min-width: 768px) {
-    .container {
-        width: 750px;
-    }
+header {
+    position: relative;
+    background-image: url('../image/cover2.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
 }
 
-
-/* Medium  */
-
-@media (min-width: 992px) {
-    .container {
-        width: 970px;
-    }
+header::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+}
 
-/* • Large  */
-
-@media (min-width: 1200px) {
-    .container {
-        width: 1170px;
+@media (max-width: 768px) {
+    .header .container h4 {
+        display: none;
     }
 }
 
@@ -137,22 +133,23 @@ a {
 .header {
     position: relative;
     padding: 15px 0px;
-    background-color: #fff;
-    box-shadow: 0 0 10px #ddd;
+    z-index: 1;
+    background-color: none !important;
 }
 
 .header .Main-header {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     height: auto;
+    z-index: 1;
 }
 
-.header .container .logo {
+.header .container {
     font-size: 28px;
     font-weight: bold;
-    color: var(--main-color);
 }
 
 @media (max-width: 991px) {
@@ -248,24 +245,9 @@ a {
 
 /* End Header */
 
-.Langing-Page {
-    position: relative;
-    background-image: url('../image/cover2.jpg');
-    background-size: cover;
-    height: calc(100vh - 84.2px);
-    width: 100%;
-}
+.Langing-Page {}
 
-.Langing-Page::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    z-index: 1;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.7);
-}
+.Langing-Page::before {}
 
 .Langing-Page .container .text {
     position: absolute;
@@ -312,6 +294,11 @@ a {
     width: 100%;
 }
 
+.aboutMe .about-info {
+    width: 100%;
+    margin: 50px auto;
+}
+
 .aboutMe h2 {
     font-weight: bold;
 }
@@ -352,7 +339,7 @@ a {
     margin: 5px;
     box-shadow: 0 2px 15px #ccc;
     padding: 25px;
-    height: 450px;
+    height: 480px;
     border-radius: var(--main-border-radius);
     -webkit-border-radius: var(--main-border-radius);
     -moz-border-radius: var(--main-border-radius);
@@ -767,9 +754,12 @@ a {
 /*foooter*/
 
 footer {
-    background-color: #e1e1e1;
+    background-color: #cccccc69;
     padding: 50px 0 20px;
-    text-align: center;
+}
+
+footer .title-footer {
+    margin-top: 15px;
 }
 
 footer h3 {
@@ -779,6 +769,14 @@ footer h3 {
 footer .icon {
     font-size: 28px;
     color: var(--main-color);
+}
+
+footer p {
+    color: var(--main-color);
+}
+
+footer .copy-right {
+    text-align: center;
 }
 
 
