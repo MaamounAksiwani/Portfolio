@@ -253,7 +253,7 @@ nav {
     position: absolute;
     top: 50%;
     z-index: 1;
-    left: 30%;
+    left: 35%;
     transform: translate( -50%, -30%);
     -webkit-transform: translate( -50%, -30%);
     -moz-transform: translate( -50%, -30%);
@@ -287,11 +287,13 @@ nav {
 
 .aboutMe {
     padding-top: var(--main-padding-top);
-    padding-bottom: var(--main-padding-bottom);
+    /* padding-bottom: var(--main-padding-bottom); */
 }
 
 .aboutMe img {
     width: 100%;
+    margin-top: 10px;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
 }
 
 .aboutMe .about-info {
@@ -305,6 +307,11 @@ nav {
 
 .aboutMe p {
     letter-spacing: 1px;
+}
+.myimg{
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    width: 10px;
+    height: 50;
 }
 
 
@@ -358,9 +365,9 @@ nav {
 /*Start tools*/
 
 .tools {
-    padding-top: var(--main-padding-top);
+    /* padding-top: var(--main-padding-top); */
     padding-bottom: var(--main-padding-bottom);
-    background-color: #ffe9fd;
+    /* background-color: #ffe9fd; */
 }
 
 .tools h1,
